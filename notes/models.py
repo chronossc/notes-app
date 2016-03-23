@@ -25,7 +25,7 @@ class Note(models.Model):
 @receiver(pre_save, sender=Note)
 def update_slug(sender, instance, **kwargs):
     slug = slugify(instance.title)[:50]
-    existent_slug = Note.objects.filter(slug=slug)
+    existent_slug = Note.objects.filter(slug=slug).exclude(pk=instance.pk)
     if existent_slug:
         slug = "{}-{}".format(slug, time.time())
     instance.slug = slug

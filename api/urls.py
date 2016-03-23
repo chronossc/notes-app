@@ -14,5 +14,5 @@ router = DefaultRouter()
 router.register(r"notes", NoteViewSet, base_name="note")
 
 urlpatterns = [
-    url(r'^auth/$', rest_framework_jwt.views.obtain_jwt_token),
+    url(r'^auth/$', rest_framework_jwt.views.obtain_jwt_token, name="auth"),
 ] + router.urls
