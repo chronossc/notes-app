@@ -1,7 +1,8 @@
 # Notes API
 
 ## Overview
-This API is a very simple notes app for show people my code skills in a fast project. It came with a postman collection for anyone test it.
+
+This API is a very simple notes app for show people my code skills in a fast project. As example I removed few stuff from a default Django installation, you will see it commented in settings.py.
 
 ## Setup
 
