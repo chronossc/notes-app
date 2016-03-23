@@ -26,11 +26,11 @@ Returns the created note object.
 
 List the notes. You can filter favorited notes by appending `?favorited=True` to url.
 
-### PATCH /api/notes/<id>/
+### PATCH /api/notes/&lt;id&gt;/
 
 Update a note. Available fields are `title`, `note` and `favorited`. You can favorite a note by using `{"favorited": "true"}`. Returns the created note object.
 
-### DELETE /api/notes/<id>/
+### DELETE /api/notes/&lt;id&gt;/
 
 Delete a note.
 
@@ -42,3 +42,5 @@ You can import `Notes-API.postman_collection` into your Postman. This collection
 * **jwt_token**: the token to be used in all requests except `/api/auth/`.
 
 To set these values go to `Manage Environments` and add a new one with both variables. After you have added a new environment select it in `Manage Environments` dropdown. Every time you request `/api/auth/` you need to update `jwt_token` value.
+
+Check out the [documentation about Postman Environments](http://www.getpostman.com/docs/test_multi_environments).
